@@ -1,0 +1,89 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes
+T_opt
+!s110 1783492770
+V:iCj@zW_fdZ=czNdK?j4b2
+04 6 4 work Part_A fast 0
+=1-f43909758d86-6a4df0a1-2f1-438c
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1783495409
+V`QFS`@?g?Rm]F<1Ez@MOc3
+Z4 04 13 4 work AssignmentOne fast 0
+=1-f43909758d86-6a4dfaf1-103-172c
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1783521389
+VVCo[dXE;WlY0<AXgJazRX1
+R4
+=1-f43909758d86-6a4e606d-2b0-2560
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt2
+R3
+vAssignmentOne
+Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1783521388
+!i10b 1
+!s100 RbWFH3DlE6DOF8dMZnzDY0
+IgN=5N47SZ9NF5nd<ZoiJ<3
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AssignmentOne_sv_unit
+S1
+Z7 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One
+w1783521189
+8AssignmentOne.sv
+FAssignmentOne.sv
+L0 1
+Z8 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1783521388.000000
+!s107 AssignmentOne.sv|
+!s90 -reportprogress|300|AssignmentOne.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@assignment@one
+vPart_A
+R5
+!s110 1783492754
+!i10b 1
+!s100 mZ^9R[Ob4=hIOz;R:D6T]3
+INbeL5hTdjRbm_Zo<1HhY81
+R6
+!s105 Part_A_sv_unit
+S1
+R7
+w1783492697
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One/Part_A.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One/Part_A.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1783492753.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One/Part_A.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One/Part_A.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@part_@a

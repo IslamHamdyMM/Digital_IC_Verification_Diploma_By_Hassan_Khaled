@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Design_Doploma_By_Kareem_W/Week5/Assignment5/Q1
+T_opt
+!s110 1783455969
+VB?bNU`^MFfWbYKdNm[AKa3
+04 11 4 work datatype_tb fast 0
+=1-f43909758d86-6a4d60e1-34a-4a40
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vdatatype_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1783455935
+!i10b 1
+!s100 NaD=eaCE6<o=Qb7:>3YJz0
+I_X=RXzLokf1U>=7m0cfKQ1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 Lab0_sv_unit
+S1
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab
+w1783455921
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab/Lab0.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab/Lab0.sv
+L0 1
+OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1783455935.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab/Lab0.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab/Lab0.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0

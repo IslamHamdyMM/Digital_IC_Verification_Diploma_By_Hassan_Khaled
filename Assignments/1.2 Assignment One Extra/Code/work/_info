@@ -1,0 +1,44 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One
+T_opt
+!s110 1783537613
+V?Hn0PVgRHfW<f@FXS;VPL0
+04 19 4 work AssignmentOne_Extra fast 0
+=1-f43909758d86-6a4e9fcd-75-1ca4
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vAssignmentOne_Extra
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1783537608
+!i10b 1
+!s100 nTg>WV0g?WJ3IdC08JFOK0
+IYj_aW=]JkUfWl37a7:YF@1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 AssignmentOne_Extra_sv_unit
+S1
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One Extra
+w1783537583
+8AssignmentOne_Extra.sv
+FAssignmentOne_Extra.sv
+L0 1
+OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1783537608.000000
+!s107 AssignmentOne_Extra.sv|
+!s90 -reportprogress|300|AssignmentOne_Extra.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@assignment@one_@extra

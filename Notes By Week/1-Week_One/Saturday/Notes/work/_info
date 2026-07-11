@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Friday/Lab
+T_opt
+!s110 1783459031
+V:H04m`cZB_UfUA0I[><[_1
+04 13 4 work union_example fast 0
+=1-f43909758d86-6a4d6cd7-1db-2480
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vunion_example
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1783459016
+!i10b 1
+!s100 ]9XG`YgJ1eG[S3f@jPHmG3
+Iiz9Mnb1nXR[n=MV6id5C^1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 union_example_sv_unit
+S1
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes
+w1783458947
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes/union_example.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes/union_example.sv
+L0 1
+OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1783459016.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes/union_example.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Notes/union_example.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
