@@ -1,0 +1,162 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.6c/examples
+T_opt
+!s110 1784058088
+VzLo8E_QYVbWY8T?E[7OjI3
+04 6 4 work Assoc2 fast 0
+=1-f43909758d86-6a5690e8-201-2df4
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1784059086
+V9XKGFdWdMkHXzDnPIHZ;83
+04 6 4 work assoc3 fast 0
+=1-f43909758d86-6a5694ce-7c-c80
+R1
+R2
+n@_opt1
+R3
+T_opt2
+!s110 1784047605
+VAz`cRzG8=oKi?QMCDPFAn0
+04 6 4 work assoc1 fast 0
+=4-f43909758d86-6a5667f5-1c-2778
+R1
+R2
+n@_opt2
+R3
+R0
+vassoc1
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1784047601
+!i10b 1
+!s100 5HQH0ffc>@n;D=Y=;g8]m3
+I6[XV5@XC[Y[QUKjHcgPnS3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Assoc1_sv_unit
+S1
+Z6 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes
+w1784047596
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc1.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc1.sv
+L0 1
+Z7 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1784047601.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc1.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc1.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vAssoc2
+R4
+!s110 1784058074
+!i10b 1
+!s100 :o5<aSHY9F6ML;<hm2UB33
+I3MkhQWWzBm6aGP[mDGO`I0
+R5
+!s105 Assoc2_sv_unit
+S1
+R6
+w1784058070
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc2.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc2.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1784058074.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc2.sv|
+!i113 0
+R8
+R2
+n@assoc2
+vassoc3
+R4
+!s110 1784058915
+!i10b 1
+!s100 DD=9QcQl0Y>z75EScTVi32
+I>`h1MDjD60jI2=U2GI3k90
+R5
+!s105 Assoc3_sv_unit
+S1
+R6
+w1784058911
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc3.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc3.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1784058915.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Assoc3.sv|
+!i113 0
+R8
+R2
+vQueue
+R4
+!s110 1784021968
+!i10b 1
+!s100 eWSoIB8if29[aBYIRP?8c0
+IiQ^=ndKC^aKGZzbokWj^S1
+R5
+!s105 Queue_sv_unit
+S1
+R6
+w1784021960
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1784021968.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue.sv|
+!i113 0
+R8
+R2
+n@queue
+vQueue2
+R4
+!s110 1784028738
+!i10b 1
+!s100 f0YIMeKBG=10Ud]UTBl240
+IA28LoWbdjc_Klj<Ya`I000
+R5
+!s105 Queue2_sv_unit
+S1
+R6
+w1784028730
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue2.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue2.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1784028738.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes/Queue2.sv|
+!i113 0
+R8
+R2
+n@queue2

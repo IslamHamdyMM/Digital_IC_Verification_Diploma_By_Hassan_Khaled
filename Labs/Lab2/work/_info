@@ -7,37 +7,37 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/1-Week_One/Saturday/Assignments/Assignment One Extra
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Friday/Seesion Codes
 T_opt
-!s110 1783672729
-VDLUA]@kG`HRoO]d6_`oT70
+!s110 1784039661
+VaQC_Q?9jM6AbJ_iF9NDNH3
 04 4 4 work Lab2 fast 0
-=1-f43909758d86-6a50af98-3e7-1bc4
-o-quiet -auto_acc_if_foreign -work work +acc
+=7-f43909758d86-6a5648ed-263-4128
+o-quiet -auto_acc_if_foreign -work work
 Z0 tCvgOpt 0
 n@_opt
 OL;O;10.6c;65
 vLab2
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1783672718
+!s110 1784039656
 !i10b 1
-!s100 TUiPIl:3Q8ASHd>^1982:2
-IWNZ=3<AJSXH^]:I709Xe:2
+!s100 NNz2Pl?8VTDCDNYn;d@g22
+IP`<PE^0OkHQ0UGcJ5k]U80
 VDg1SIo80bB@j0V0VzS_@n1
 !s105 Lab2_sv_unit
 S1
-dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/2-Week_Two/Friday/Lab
-w1783672689
-8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/2-Week_Two/Friday/Lab/Lab2.sv
-FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/2-Week_Two/Friday/Lab/Lab2.sv
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab2
+w1784039651
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab2/Lab2.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab2/Lab2.sv
 L0 1
 OL;L;10.6c;65
 r1
 !s85 0
 31
-!s108 1783672718.000000
-!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/2-Week_Two/Friday/Lab/Lab2.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/2-Week_Two/Friday/Lab/Lab2.sv|
+!s108 1784039656.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab2/Lab2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab2/Lab2.sv|
 !i113 0
 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R0
