@@ -1,0 +1,39 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /Uart_packet/Uart_class/uart_cg                  100.0%        100    Covered              
+    covered/total bins:                                    15         15                      
+    missing/total bins:                                     0         15                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint uart_cg::cp_data_in                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin zero                                           21          1    Covered              
+        bin max                                            34          1    Covered              
+        bin mid                                            45          1    Covered              
+    Coverpoint uart_cg::cp_parity_in                   100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin no_p                                           25          1    Covered              
+        bin odd_p                                          37          1    Covered              
+        bin even_p                                         38          1    Covered              
+    Cross uart_cg::cross_data_parity                   100.0%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                         100.0%        100                      
+        bin <zero,no_p>                                     6          1    Covered              
+        bin <max,no_p>                                      9          1    Covered              
+        bin <mid,no_p>                                     10          1    Covered              
+        bin <zero,odd_p>                                    8          1    Covered              
+        bin <max,odd_p>                                    11          1    Covered              
+        bin <mid,odd_p>                                    18          1    Covered              
+        bin <zero,even_p>                                   7          1    Covered              
+        bin <max,even_p>                                   14          1    Covered              
+        bin <mid,even_p>                                   17          1    Covered              
+ CLASS Uart_class
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1

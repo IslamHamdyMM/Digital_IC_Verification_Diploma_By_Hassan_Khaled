@@ -1,0 +1,88 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /Top_sv_unit/coverage_class/cg                   100.0%        100    Covered              
+    covered/total bins:                                    17         19                      
+    missing/total bins:                                     2         19                      
+    % Hit:                                              89.4%        100                      
+    Coverpoint cg::cp1                                 100.0%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp2                                 100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp3                                 100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp4                                   0.0%        100    ZERO                 
+        covered/total bins:                                 0          0                      
+        missing/total bins:                                 0          0                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp5                                 100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp6                                 100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+ CLASS coverage_class
+ Covergroup instance \/Top_sv_unit::coverage_class::cg  
+                                                       100.0%        100    Covered              
+    covered/total bins:                                    17         19                      
+    missing/total bins:                                     2         19                      
+    % Hit:                                              89.4%        100                      
+    Coverpoint cp1                                     100.0%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0:2]                                      21          1    Covered              
+        bin auto[3:5]                                      19          1    Covered              
+        bin auto[6:8]                                      19          1    Covered              
+        bin auto[9:11]                                     12          1    Covered              
+        bin auto[12:15]                                    29          1    Covered              
+    Coverpoint cp2                                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        illegal_bin flage_op_ill                            6               Occurred             
+        ignore_bin reserved_op                             21               Occurred             
+        bin ALU_operations                                 18          1    Covered              
+        bin Load_Store                                     11          1    Covered              
+        bin Miscellaneous                                  30          1    Covered              
+    Coverpoint cp3                                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                            22          1    Covered              
+        bin mid                                            25          1    Covered              
+        bin high                                           53          1    Covered              
+    Coverpoint cp4 [1]                                   0.0%        100    ZERO                 
+        covered/total bins:                                 0          2                      
+        missing/total bins:                                 2          2                      
+        % Hit:                                           0.0%        100                      
+        bin Load_2_Store                                    0          1    ZERO                 
+        bin Store_thr_ALU                                   0          1    ZERO                 
+    Coverpoint cp5                                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                            12          1    Covered              
+        bin mid                                            10          1    Covered              
+        bin high                                           16          1    Covered              
+    Coverpoint cp6                                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                             2          1    Covered              
+        bin mid                                             4          1    Covered              
+        bin high                                            5          1    Covered              
+
+ [1] - Does not contribute coverage as weight is 0
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1

@@ -1,0 +1,177 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab6
+T_opt
+!s110 1784817677
+VXTISH;LUEVh_H<f3meYfc3
+Z1 04 9 4 work Testbench fast 0
+=3-f43909758d86-6a62280c-374-41b4
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1784828676
+VbGMnlQ?Wha^1R6e>0n2be2
+R1
+=1-f43909758d86-6a625304-29-510
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+Xenum_pkg
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z5 !s110 1784828668
+!i10b 1
+!s100 ED@0M72D<nFb22]D70@d;1
+I?=lMX[DTH<W1EV7MCVmH]1
+V?=lMX[DTH<W1EV7MCVmH]1
+S1
+Z6 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three
+w1784806989
+8enum_pkg.sv
+Fenum_pkg.sv
+L0 1
+Z7 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z8 !s108 1784828668.000000
+Z9 !s107 uart_tx.v|Uart_packet.sv|enum_pkg.sv|Testbench.sv|
+Z10 !s90 -reportprogress|300|Testbench.sv|enum_pkg.sv|Uart_packet.sv|uart_tx.v|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vTestbench
+R4
+Z12 DXx4 work 8 enum_pkg 0 22 ?=lMX[DTH<W1EV7MCVmH]1
+DXx4 work 11 Uart_packet 0 22 cefXIX[JPE]O5gQc@7GQ=1
+R5
+!i10b 1
+!s100 <UT69<T=<TBn;hSe;WZFL0
+I<;ZbLaT^?Hb8[TVM?`zH21
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Testbench_sv_unit
+S1
+R6
+w1784828652
+8Testbench.sv
+FTestbench.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@testbench
+XTestbench_sv_unit
+R4
+Z14 DXx4 work 8 enum_pkg 0 22 T^X2T0zBf<A9PY1NhG8d:0
+DXx4 work 11 Uart_packet 0 22 @Nj7=`oe?z?`7:]HNV>JQ1
+VjAC=J[;IgD[[DHVzKTZ831
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^iD[Lk1SZjnEUEIjA]V>Q3
+IjAC=J[;IgD[[DHVzKTZ831
+!i103 1
+S1
+R6
+w1784816399
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Testbench.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Testbench.sv
+L0 1
+R7
+!s108 1784816607.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Testbench.sv|
+!i113 0
+Z15 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@testbench_sv_unit
+XUart_packet
+R4
+R12
+R5
+!i10b 1
+!s100 H>[n<=NZ6[Ygkf>C62OVb2
+IcefXIX[JPE]O5gQc@7GQ=1
+VcefXIX[JPE]O5gQc@7GQ=1
+S1
+R6
+w1784827624
+8Uart_packet.sv
+FUart_packet.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@uart_packet
+XUart_packet_sv_unit
+R4
+R14
+!s110 1784814486
+!i10b 1
+!s100 _B3Kb8Ga]z^G@9TKO>W2<3
+I;JIBYFR?V2dZVTCD[BK0;2
+V;JIBYFR?V2dZVTCD[BK0;2
+!i103 1
+S1
+R6
+w1784811830
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Uart_packet.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Uart_packet.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1784814486.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Uart_packet.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/3.1 Assugnment Three/Uart_packet.sv|
+!i113 0
+R15
+R2
+n@uart_packet_sv_unit
+vuart_tx
+R5
+!i10b 1
+!s100 P38U1jUdh:EAe1:=FX[4f2
+IWVXT2WL5FmTZ7bRZmYj>e0
+R13
+R6
+w1784827739
+8uart_tx.v
+Fuart_tx.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2

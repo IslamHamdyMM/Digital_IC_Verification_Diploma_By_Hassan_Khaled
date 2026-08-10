@@ -1,0 +1,15 @@
+During the verification of the uart_tx module, the testbench identified two bugs in the RTL design
+
+Data Bit Order Inversion (MSB-First)
+
+Issue The UART protocol requires sending data LSB-first (bit 0 to bit 7). However, the DUT transmits MSB-first (bit 7 to bit 0) using a left shift (shift_reg  1).
+
+Fix Change the output bit assignment to tx = shift_reg[0] and shift right using shift_reg  1.
+
+Inverted Parity Calculation
+
+Issue The parity calculation logic in the IDLE state is inverted. It generates Odd parity when Even is selected, and Even parity when Odd is selected.
+
+Fix Correct the parity assignment in the RTL to
+
+parity_bit = (even_parity)  ~(^data_in)  (^data_in);

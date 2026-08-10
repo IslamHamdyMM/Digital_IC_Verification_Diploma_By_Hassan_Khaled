@@ -1,0 +1,68 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab4
+T_opt
+!s110 1784277421
+V;Gn_7M<<O5ONzIo8Hon_:1
+04 4 4 work Lab5 fast 0
+=6-f43909758d86-6a59e9ad-7c-21b0
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vLab5
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 12 Lab5_sv_unit 0 22 F@]<goih=8Jk8G[;<RQ@J2
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]INoL2JK>9^<IYTjk8eeo0
+IMRGTT]Zj7<S>7R@[4znFL2
+!s105 Lab5_sv_unit
+S1
+Z2 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab5
+Z3 w1784277406
+Z4 8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab5/Lab5.sv
+Z5 FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab5/Lab5.sv
+L0 28
+Z6 OL;L;10.6c;65
+Z7 !s108 1784277415.000000
+Z8 !s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab5/Lab5.sv|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab5/Lab5.sv|
+!i113 0
+Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@lab5
+XLab5_sv_unit
+R1
+VF@]<goih=8Jk8G[;<RQ@J2
+r1
+!s85 0
+31
+!i10b 1
+!s100 7o6J3JXA0AE9D:JcV]iFm0
+IF@]<goih=8Jk8G[;<RQ@J2
+!i103 1
+S1
+R2
+R3
+R4
+R5
+L0 1
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R0
+n@lab5_sv_unit

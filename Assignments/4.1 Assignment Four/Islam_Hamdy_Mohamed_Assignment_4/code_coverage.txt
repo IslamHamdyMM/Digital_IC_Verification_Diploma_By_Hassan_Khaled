@@ -1,0 +1,645 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: Testbench.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           27        25         2      92.5
+
+================================Statement Details================================
+
+Statement Coverage for file Testbench.sv --
+
+    1                                                module Testbench;
+    2                                                
+    3                                                    import Uart_packet::*;
+    4                                                    bit clk, rst_n, tx_start;
+    5                                                    logic [7:0] data_in;
+    6                                                    bit parity_en;     // 1 = enable parity
+    7                                                    bit even_parity;   // 1 = even, 0 = odd
+    8                                                    bit tx, tx_busy;
+    9                                                    logic actual_queue[$], expected_queue[$];
+    10                                               
+    11                                                   // Clk generation
+    12                                                   initial begin
+    13              1                          1             clk = 0;
+    14              1                          1             forever begin
+    15              1                       2780                 #1 clk = ~clk;
+    15              2                       2779     
+    16                                                       end
+    17                                                   end
+    18                                               
+    19                                                   // DUT connections
+    20                                                   uart_tx DUT (
+    21                                                       .clk(clk),
+    22                                                       .data_in(data_in),
+    23                                                       .rst_n(rst_n),
+    24                                                       .tx(tx),
+    25                                                       .tx_busy(tx_busy),
+    26                                                       .tx_start(tx_start),
+    27                                                       .parity_en(parity_en),
+    28                                                       .even_parity(even_parity)
+    29                                                   );   
+    30                                               
+    31                                                   Uart_class pkt;
+    32                                               
+    33                                               initial begin
+    34                                               
+    35                                                       // Reset all
+    36              1                          1             rst_n = 0;
+    37              1                          1             tx_start = 0;
+    38                                               
+    39                                                       // Check reset
+    40              1                          1             @(negedge clk);
+    41              1                          1             @(negedge clk);
+    42              1                          1             @(negedge clk);
+    43                                                       if (tx == 1'b1 && tx_busy == 1'b0) begin
+    44              1                          1                 $display("=====> Reset button work correctly <=====");
+    45                                                       end else begin
+    46              1                    ***0***                 $display("=====> Reset button does not work correctly <=====");
+    47                                                       end
+    48                                               
+    49                                                       // Check transition from IDLE to Start
+    50              1                          1             rst_n = 1'b1;
+    51              1                          1             tx_start = 1'b1;
+    52              1                          1             @(negedge clk);
+    53              1                          1             tx_start = 1'b0; // Clear tx_start so DUT can complete and clear tx_busy!
+    54                                               
+    55                                                       if (tx == 1'b1 || tx_busy == 1'b1) begin
+    56              1                          1                 $display("Transition from IDLE to START state DONE");
+    57                                                       end else begin
+    58              1                    ***0***                 $display("Transition from IDLE to START state FAILED");
+    59                                                       end
+    60                                               
+    61                                                       // Wait for DUT to return to IDLE before starting the stimulus loop
+    62              1                          1             wait (tx_busy == 1'b0);
+    63                                               
+    64                                                       // Sending Data
+    65              1                        100             repeat(100) begin
+    66              1                        100                 pkt = new();
+    67              1                        100                 pkt = pkt.generate_stimulus();
+    68                                                           
+    69              1                        100                 pkt.golden_model(expected_queue);
+    70              1                        100                 pkt.drive_stim(clk, tx_busy, tx_start, data_in, parity_en, even_parity);
+    71              1                        100                 pkt.collect_output(clk, tx_busy, tx, actual_queue);
+    72              1                        100                 pkt.check_result(actual_queue, expected_queue);
+    73                                                       end
+    74                                               
+    75              1                          1             $display("=====> All Tests Completed <=====");
+    76              1                          1             $stop();
+    77                                               
+    78                                                   end
+    79                                               
+    80                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                         4         2         2      50.0
+
+================================Branch Details================================
+
+Branch Coverage for file Testbench.sv --
+
+------------------------------------IF Branch------------------------------------
+    43                                         1     Count coming in to IF
+    43              1                          1             if (tx == 1'b1 && tx_busy == 1'b0) begin
+    45              1                    ***0***             end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+------------------------------------IF Branch------------------------------------
+    55                                         1     Count coming in to IF
+    55              1                          1             if (tx == 1'b1 || tx_busy == 1'b1) begin
+    57              1                    ***0***             end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              4         0         4       0.0
+
+================================Condition Details================================
+
+Condition Coverage for file Testbench.sv --
+
+----------------Focused Condition View-------------------
+Line       43 Item    1  (tx && ~tx_busy)
+Condition totals: 0 of 2 input terms covered = 0.0%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+          tx         N  '_0' not hit             Hit '_0'
+     tx_busy         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  tx_0                  -                             
+  Row   2:          1  tx_1                  ~tx_busy                      
+  Row   3:          1  tx_busy_0             tx                            
+  Row   4:    ***0***  tx_busy_1             tx                            
+
+----------------Focused Condition View-------------------
+Line       55 Item    1  (tx || tx_busy)
+Condition totals: 0 of 2 input terms covered = 0.0%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+          tx         N  '_0' not hit             Hit '_0'
+     tx_busy         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  tx_0                  ~tx_busy                      
+  Row   2:          1  tx_1                  -                             
+  Row   3:    ***0***  tx_busy_0             ~tx                           
+  Row   4:    ***0***  tx_busy_1             ~tx                           
+
+
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                     30        29         1      96.6
+
+================================Toggle Details================================
+
+Toggle Coverage for File Testbench.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+          4                                  rst_n           0           1       50.00 
+
+Total Node Count     =         15 
+Toggled Node Count   =         14 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =       96.6% (29 of 30 bins)
+
+=================================================================================
+=== File: Uart_packet.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           43        34         9      79.0
+
+================================Statement Details================================
+
+Statement Coverage for file Uart_packet.sv --
+
+    1                                                package Uart_packet;
+    2                                                
+    3                                                import enum_pkg::*;
+    4                                                
+    5                                                class Uart_class;
+    6                                                    rand logic [7:0] data_in;
+    7                                                    rand enum_pkg::Parity_t parity_in;
+    8                                                
+    9                                                    constraint Data_C {
+    10                                                       data_in dist { 8'h00 :/ 30, 8'hFF :/ 30, [8'h01:8'hFE] :/ 40};
+    11                                                       parity_in dist {No_Parity :/ 20, ODD_Parity :/ 40, EVEN_Parity :/ 40};
+    12                                                   }
+    13                                               
+    14                                                   // --- FUNCTIONAL COVERAGE DEFINITION ---
+    15                                                   covergroup uart_cg;
+    16                                                       // Cover point for data input values (0x00, 0xFF, and middle values)
+    17                                                       cp_data_in: coverpoint data_in {
+    18                                                           bins zero = {8'h00};
+    19                                                           bins max  = {8'hFF};
+    20                                                           bins mid  = {[8'h01:8'hFE]};
+    21                                                       }
+    22                                               
+    23                                                       // Cover point for parity modes
+    24                                                       cp_parity_in: coverpoint parity_in {
+    25                                                           bins no_p   = {No_Parity};
+    26                                                           bins odd_p  = {ODD_Parity};
+    27                                                           bins even_p = {EVEN_Parity};
+    28                                                       }
+    29                                               
+    30                                                       // Cross coverage between Data and Parity modes
+    31                                                       cross_data_parity: cross cp_data_in, cp_parity_in;
+    32                                                   endgroup
+    33                                               
+    34                                                   function new();
+    35              1                        200             uart_cg = new(); // Instantiate covergroup
+    36                                                   endfunction
+    37                                               
+    38                                                   function void Print();
+    39              1                        100             $display("displaying the stimulus values : data_in = %0h, parity_in = %0s",
+    40                                                                 data_in, parity_in.name());
+    41                                                   endfunction
+    42                                               
+    43                                                   function Uart_class generate_stimulus();
+    44              1                        100             Uart_class pkt = new();
+    45                                                       if (pkt.randomize()) begin
+    46              1                        100                 pkt.uart_cg.sample(); // Sample coverage on successful randomization
+    47              1                        100                 pkt.Print();
+    48              1                        100                 return pkt;
+    49                                                       end else begin
+    50              1                    ***0***                 $display("Randomization failed");
+    51              1                    ***0***                 return null;
+    52                                                       end
+    53                                                   endfunction
+    54                                               
+    55                                                   task golden_model(ref logic expected_queue[$]);
+    56              1                        100             expected_queue.delete();
+    57                                               
+    58              1                        100             expected_queue.push_back(1'b0);
+    59                                               
+    60              1                        100             for (int i = 0; i < 8; i++) begin
+    60              2                        800     
+    61              1                        800                 expected_queue.push_back(this.data_in[i]);
+    62                                                       end
+    63                                               
+    64                                                       if (this.parity_in == enum_pkg::EVEN_Parity) begin
+    65              1                         38                 expected_queue.push_back(~(^this.data_in));
+    66                                                       end else if (this.parity_in == enum_pkg::ODD_Parity) begin
+    67              1                         37                 expected_queue.push_back(^this.data_in);
+    68                                                       end
+    69                                               
+    70              1                        100             expected_queue.push_back(1'b1);
+    71                                                   endtask
+    72                                                   
+    73                                                   task drive_stim(
+    74                                                       ref bit clk,
+    75                                                       ref bit tx_busy,
+    76                                                       ref bit tx_start,
+    77                                                       ref logic [7:0] tb_data_in,
+    78                                                       ref bit parity_en,
+    79                                                       ref bit even_parity
+    80                                                   );
+    81                                                       if (tx_busy) begin
+    82              1                    ***0***                 $display("Notice: Transmitter is busy, waiting for it to finish...");
+    83              1                    ***0***                 wait (tx_busy == 1'b0);            
+    84                                                       end
+    85                                               
+    86              1                        100             @(posedge clk);
+    87              1                        100             tx_start    = 1'b1;
+    88              1                        100             tb_data_in  = this.data_in;
+    89              1                        100             parity_en   = (this.parity_in != enum_pkg::No_Parity);
+    90              1                        100             even_parity = (this.parity_in == enum_pkg::EVEN_Parity);
+    91                                                       
+    92              1                        100             @(posedge clk);
+    93              1                        100             tx_start    = 1'b0;
+    94                                                   endtask
+    95                                               
+    96                                                   task collect_output(
+    97                                                       ref bit clk,
+    98                                                       ref bit tx_busy,
+    99                                                       ref bit tx,
+    100                                                      ref logic actual_queue[$]
+    101                                                  );
+    102                                                      int total_bits;
+    103             1                        100             total_bits = (this.parity_in == enum_pkg::No_Parity) ? 10 : 11;
+    104                                              
+    105             1                        100             wait (tx_busy == 1'b1);
+    106             1                        100             wait (tx == 1'b0);
+    107             1                       1075             repeat (total_bits) begin
+    108             1                       1075                 @(negedge clk);
+    109             1                       1075                 actual_queue.push_back(tx);
+    110                                                      end
+    111             1                        100             wait (tx_busy == 1'b0);
+    112                                                  endtask
+    113                                              
+    114                                                  task check_result(ref logic actual_queue[$], ref logic expected_queue[$]);
+    115             1                        100             bit match = 1;
+    116                                              
+    117                                                      if (actual_queue.size() != expected_queue.size()) begin
+    118             1                    ***0***                 $display("[ERROR] Size mismatch! expected_size = %0d, actual_size = %0d", 
+    119                                                                    expected_queue.size(), actual_queue.size());
+    120             1                    ***0***                 match = 0;
+    121                                                      end else begin
+    122             1                       1175                 foreach (expected_queue[i]) begin
+    123                                                              if (expected_queue[i] != actual_queue[i]) begin
+    124             1                    ***0***                         $display("[MISMATCH] Bit [%0d]: Expected = %0b, Actual = %0b", 
+    125                                                                           i, expected_queue[i], actual_queue[i]);
+    126             1                    ***0***                         match = 0;
+    127                                                              end else begin
+    128             1                       1075                         $display("[MATCH] Bit [%0d]: Expected = %0b, Actual = %0b", 
+    129                                                                           i, expected_queue[i], actual_queue[i]);
+    130                                                              end
+    131                                                          end
+    132                                                      end
+    133                                              
+    134                                                      if (match) begin
+    135             1                        100                 $display("[TEST PASSED] Frame transmitted correctly!\n");
+    136                                                      end else begin
+    137             1                    ***0***                 $display("[TEST FAILED] Mismatch detected in transmission!\n");
+    138                                                      end
+    139                                              
+    140             1                        100             expected_queue.delete();
+    141             1                        100             actual_queue.delete();
+    142                                                  endtask
+    143                                              
+    144                                              endclass
+    145                                              endpackage
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        15        10         5      66.6
+
+================================Branch Details================================
+
+Branch Coverage for file Uart_packet.sv --
+
+------------------------------------IF Branch------------------------------------
+    45                                       100     Count coming in to IF
+    45              1                        100             if (pkt.randomize()) begin
+    49              1                    ***0***             end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+------------------------------------IF Branch------------------------------------
+    64                                       100     Count coming in to IF
+    64              1                         38             if (this.parity_in == enum_pkg::EVEN_Parity) begin
+    66              1                         37             end else if (this.parity_in == enum_pkg::ODD_Parity) begin
+                                              25     All False Count
+Branch totals: 3 hits of 3 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    81                                       100     Count coming in to IF
+    81              1                    ***0***             if (tx_busy) begin
+                                             100     All False Count
+Branch totals: 1 hit of 2 branches = 50.0%
+
+------------------------------------IF Branch------------------------------------
+    103                                      100     Count coming in to IF
+    103             1                         25             total_bits = (this.parity_in == enum_pkg::No_Parity) ? 10 : 11;
+    103             2                         75             total_bits = (this.parity_in == enum_pkg::No_Parity) ? 10 : 11;
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    117                                      100     Count coming in to IF
+    117             1                    ***0***             if (actual_queue.size() != expected_queue.size()) begin
+    121             1                        100             end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+------------------------------------IF Branch------------------------------------
+    123                                     1075     Count coming in to IF
+    123             1                    ***0***                     if (expected_queue[i] != actual_queue[i]) begin
+    127             1                       1075                     end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+------------------------------------IF Branch------------------------------------
+    134                                      100     Count coming in to IF
+    134             1                        100             if (match) begin
+    136             1                    ***0***             end else begin
+Branch totals: 1 hit of 2 branches = 50.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                      0         0         0     100.0
+
+================================Toggle Details================================
+
+Toggle Coverage for File Uart_packet.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+
+Total Node Count     =          0 
+Toggled Node Count   =          0 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =      100.0% (0 of 0 bins)
+
+=================================================================================
+=== File: uart_tx.v
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           25        25         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file uart_tx.v --
+
+    1                                                module uart_tx (
+    2                                                    input  wire        clk,
+    3                                                    input  wire        rst_n,
+    4                                                    input  wire        tx_start,
+    5                                                    input  wire [7:0]  data_in,
+    6                                                    input  wire        parity_en,     // 1 = enable parity
+    7                                                    input  wire        even_parity,   // 1 = even, 0 = odd
+    8                                                    output reg         tx,
+    9                                                    output reg         tx_busy
+    10                                               );
+    11                                               
+    12                                                   // State machine states
+    13                                                   localparam IDLE   = 3'd0,
+    14                                                              START  = 3'd1,
+    15                                                              DATA   = 3'd2,
+    16                                                              PARITY = 3'd3,
+    17                                                              STOP   = 3'd4;
+    18                                               
+    19                                                   reg [2:0] state;
+    20                                                   reg [3:0] bit_cnt;
+    21                                                   reg [7:0] shift_reg;
+    22                                                   reg       parity_bit;
+    23                                               
+    24              1                       1389         always @(posedge clk or negedge rst_n) begin
+    25                                                       if (!rst_n) begin
+    26              1                          2                 state     <= IDLE;
+    27              1                          2                 tx        <= 1'b1;  // idle is high
+    28              1                          2                 tx_busy   <= 1'b0;
+    29              1                          2                 shift_reg <= 8'd0;
+    30              1                          2                 bit_cnt   <= 4'd0;
+    31              1                          2                 parity_bit <= 1'b0;
+    32                                                       end else begin
+    33                                                           case (state)
+    34                                                               IDLE: begin
+    35              1                        302                         tx <= 1'b1;
+    36              1                        302                         tx_busy <= 1'b0;
+    37                                                                   if (tx_start) begin
+    38              1                        101                             shift_reg <= data_in;
+    39              1                        101                             bit_cnt <= 4'd0;
+    40              1                        101                             parity_bit <= (even_parity) ? ~(^data_in) : (^data_in);// Islam :: First bug parity_bit <= (even_parity) ? ~(^data_in) : (^data_in); ==> Done
+    41              1                        101                             tx_busy <= 1'b1;
+    42              1                        101                             state <= START;
+    43                                                                   end
+    44                                                               end
+    45                                               
+    46                                                               START: begin
+    47              1                        101                         tx <= 1'b0; // start bit
+    48              1                        101                         state <= DATA;
+    49                                                               end
+    50                                               
+    51                                                               DATA: begin
+    52              1                        808                         tx <= shift_reg[0];             //FIX_ME::convert to 0 to fix ==> Done
+    53              1                        808                         shift_reg <= shift_reg >> 1;    //FIX_ME::convert to >> to fix ==> Done 
+    54              1                        808                         bit_cnt <= bit_cnt + 1;  
+    55                                                                   if (bit_cnt == 4'd7) begin
+    56                                                                       if (parity_en)
+    57              1                         75                                 state <= PARITY;
+    58                                                                       else
+    59              1                         26                                 state <= STOP;
+    60                                                                   end
+    61                                                               end
+    62                                               
+    63                                                               PARITY: begin
+    64              1                         75                         tx <= parity_bit;
+    65              1                         75                         state <= STOP;
+    66                                                               end
+    67                                               
+    68                                                               STOP: begin
+    69              1                        101                         tx <= 1'b1; // stop bit (always 1)
+    70              1                        101                         state <= IDLE;
+    71                                                               end
+    72                                                           endcase
+    73                                                       end
+    74                                                   end
+    75                                               
+    76                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        16        15         1      93.7
+
+================================Branch Details================================
+
+Branch Coverage for file uart_tx.v --
+
+------------------------------------IF Branch------------------------------------
+    25                                      1389     Count coming in to IF
+    25              1                          2             if (!rst_n) begin
+    32              1                       1387             end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    33                                      1387     Count coming in to CASE
+    34              1                        302                     IDLE: begin
+    46              1                        101                     START: begin
+    51              1                        808                     DATA: begin
+    63              1                         75                     PARITY: begin
+    68              1                        101                     STOP: begin
+                                         ***0***     All False Count
+Branch totals: 5 hits of 6 branches = 83.3%
+
+------------------------------------IF Branch------------------------------------
+    37                                       302     Count coming in to IF
+    37              1                        101                         if (tx_start) begin
+                                             201     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    40                                       101     Count coming in to IF
+    40              1                         38                             parity_bit <= (even_parity) ? ~(^data_in) : (^data_in);// Islam :: First bug parity_bit <= (even_parity) ? ~(^data_in) : (^data_in); ==> Done
+    40              2                         63                             parity_bit <= (even_parity) ? ~(^data_in) : (^data_in);// Islam :: First bug parity_bit <= (even_parity) ? ~(^data_in) : (^data_in); ==> Done
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    55                                       808     Count coming in to IF
+    55              1                        101                         if (bit_cnt == 4'd7) begin
+                                             707     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    56                                       101     Count coming in to IF
+    56              1                         75                             if (parity_en)
+    58              1                         26                             else
+Branch totals: 2 hits of 2 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                        83.3
+        States                       5         5         0     100.0
+        Transitions                  9         6         3      66.6
+
+================================FSM Details================================
+
+FSM Coverage for file uart_tx.v --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  34                IDLE                   0
+  46               START                   1
+  51                DATA                   2
+  68                STOP                   4
+  63              PARITY                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    IDLE                 103
+                   START                 101
+                    DATA                 101
+                    STOP                 101
+                  PARITY                  75
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  42                   0                 101          IDLE -> START       
+  48                   1                 101          START -> DATA       
+  59                   3                  26          DATA -> STOP        
+  57                   4                  75          DATA -> PARITY      
+  70                   6                 101          STOP -> IDLE        
+  65                   7                  75          PARITY -> STOP      
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  26                   2          START -> IDLE       
+  26                   5          DATA -> IDLE        
+  26                   8          PARITY -> IDLE      
+
+
+    Summary                     Active      Hits    Misses % Covered
+    -------                     ------      ----    ------ ---------
+        States                       5         5         0     100.0
+        Transitions                  9         6         3      66.6
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                     62        61         1      98.3
+
+================================Toggle Details================================
+
+Toggle Coverage for File uart_tx.v --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+          3                                  rst_n           0           1       50.00 
+
+Total Node Count     =         31 
+Toggled Node Count   =         30 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =       98.3% (61 of 62 bins)
+
+
+Total Coverage By File (code coverage only, filtered view): 69.3%
+

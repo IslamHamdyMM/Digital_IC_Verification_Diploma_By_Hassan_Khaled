@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/2-Week_Two/Saturday/Notes/Seesion Codes
+T_opt
+!s110 1784151777
+VjY7GOZ>RM8_VXD5i?5Y^00
+Z1 04 21 4 work multi_op_processor_tb fast 0
+=1-f43909758d86-6a57fee1-164-48fc
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1784181970
+Vi3;[fSdLnF_5B=El1CEZa2
+R1
+=1-f43909758d86-6a5874d2-281-3878
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+vmulti_op_processor
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1784181965
+!i10b 1
+!s100 :3@4J]SU6EYP6<K;YfZVc1
+Im491<k<z`HfdTAW46`hNJ3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 multi_op_processor_sv_unit
+S1
+Z6 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/2.1 Assignment Two
+w1783924803
+8multi_op_processor.sv
+Fmulti_op_processor.sv
+L0 1
+Z7 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z8 !s108 1784181965.000000
+Z9 !s107 multi_op_processor.sv|multi_op_processor_tb.sv|
+Z10 !s90 -reportprogress|300|multi_op_processor_tb.sv|multi_op_processor.sv|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vmulti_op_processor_tb
+R4
+DXx4 work 29 multi_op_processor_tb_sv_unit 0 22 ZAa06ZzH77z`Yj`D<46EB0
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 hlER_TnOU3PjQ7hGTMCWI2
+I6@8<6]4TIEjdI2Dh9j<g00
+!s105 multi_op_processor_tb_sv_unit
+S1
+R6
+Z12 w1784151716
+Z13 8multi_op_processor_tb.sv
+Z14 Fmulti_op_processor_tb.sv
+L0 9
+R7
+R8
+R9
+R10
+!i113 0
+R11
+R2
+Xmulti_op_processor_tb_sv_unit
+R4
+VZAa06ZzH77z`Yj`D<46EB0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;O_5V=<LdUbi9iZi[QIzj1
+IZAa06ZzH77z`Yj`D<46EB0
+!i103 1
+S1
+R6
+R12
+R13
+R14
+L0 4
+R7
+R8
+R9
+R10
+!i113 0
+R11
+R2

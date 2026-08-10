@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab6
+T_opt
+!s110 1786263433
+V@]@KMkRJ^>bH`i<<1oCj70
+04 3 4 work top fast 0
+=1-f43909758d86-6a783789-1e6-4d88
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vALU
+!s110 1786263428
+!i10b 1
+!s100 @9BNm^oo>L<iPGdLkn4DK1
+IaXS[mW[URLLol]SQ:Y1;e3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1786263424
+8ALU.v
+FALU.v
+L0 1
+Z3 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1786263428.000000
+!s107 ALU.v|
+!s90 -reportprogress|300|ALU.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vtop
+Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 11 Top_sv_unit 0 22 GcD87QgoF5;9>^7Wm>XVl0
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 k7e@?WUfY0lj<^FcoU9Ec3
+I6G4ab0JfFBgHV][ol_Rna2
+!s105 Top_sv_unit
+S1
+R0
+Z7 w1786263252
+Z8 8Top.sv
+Z9 FTop.sv
+L0 3
+R3
+R4
+Z10 !s107 Stim_Class.sv|Top.sv|
+Z11 !s90 -reportprogress|300|Top.sv|
+!i113 0
+R5
+R1
+XTop_sv_unit
+R6
+VGcD87QgoF5;9>^7Wm>XVl0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ij`BMmeHJahY4DF4bYdgZ0
+IGcD87QgoF5;9>^7Wm>XVl0
+!i103 1
+S1
+R0
+R7
+R8
+R9
+FStim_Class.sv
+L0 1
+R3
+R4
+R10
+R11
+!i113 0
+R5
+R1
+n@top_sv_unit

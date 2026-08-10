@@ -1,0 +1,16 @@
+{E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/2.2 Assignment Two Extra/Code/multi_op_processor.sv} {1 {vlog -work work -vopt -sv -stats=none {E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/2.2 Assignment Two Extra/Code/multi_op_processor.sv}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module multi_op_processor
+
+Top level modules:
+	multi_op_processor
+
+} {} {}} {E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/2.2 Assignment Two Extra/Code/multi_op_processor_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Assignments/2.2 Assignment Two Extra/Code/multi_op_processor_tb.sv}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package multi_op_processor_tb_sv_unit
+-- Compiling module multi_op_processor_tb
+
+Top level modules:
+	multi_op_processor_tb
+
+} {} {}}

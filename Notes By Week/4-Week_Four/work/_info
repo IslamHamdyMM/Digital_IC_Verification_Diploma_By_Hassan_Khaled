@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Digital_IC_Design_Doploma_By_Kareem_W/Extra Projects/AMBA_AHB_Protocol/Code
+T_opt
+!s110 1786198663
+V;[GF0<FY<II3PD[2fhQJR3
+Z1 04 2 4 work tb fast 0
+=1-f43909758d86-6a773a87-205-3894
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1786202649
+VV>9c:C6bHzEJc4j^IRBNO1
+R1
+=1-f43909758d86-6a774a19-2f6-3a1c
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+XCoverage1_sv_unit
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+V20CRTVLV^81C<0A]IDnRb3
+r1
+!s85 0
+31
+!i10b 1
+!s100 8NCmL`V_4R=mOT;7Kci@m1
+I20CRTVLV^81C<0A]IDnRb3
+!i103 1
+S1
+Z5 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/4-Week_Four
+Z6 w1786202643
+Z7 8Coverage1.sv
+Z8 FCoverage1.sv
+L0 1
+Z9 OL;L;10.6c;65
+Z10 !s108 1786202645.000000
+Z11 !s107 design_tst.sv|Coverage1.sv|
+Z12 !s90 -reportprogress|300|Coverage1.sv|design_tst.sv|
+!i113 0
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@coverage1_sv_unit
+vdesign_tst
+R4
+!s110 1786202645
+!i10b 1
+!s100 ]P=W@oD0YmYUUV7C:N>hz2
+I2V]4Fb[HB=1C>49=^24E@0
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+!s105 design_tst_sv_unit
+S1
+R5
+w1786198423
+8design_tst.sv
+Fdesign_tst.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R2
+vtb
+R4
+DXx4 work 17 Coverage1_sv_unit 0 22 20CRTVLV^81C<0A]IDnRb3
+R14
+r1
+!s85 0
+31
+!i10b 1
+!s100 YNmS`>>EJf2LZcP:CYZo[2
+IE>9QBiGJ5f`0U[cC5P3Oc1
+!s105 Coverage1_sv_unit
+S1
+R5
+R6
+R7
+R8
+L0 31
+R9
+R10
+R11
+R12
+!i113 0
+R13
+R2
