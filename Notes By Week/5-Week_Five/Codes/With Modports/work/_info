@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface
+T_opt
+!s110 1786465889
+V=DhnP7NIlG479NO:cRE802
+04 4 4 work top3 fast 0
+=1-f43909758d86-6a7b4e61-9b-3974
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+Yarb_if
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1786465880
+!i10b 1
+!s100 36zUZV3U<n1Gn3DHe1En52
+IK;HIEahMcSHD^jY@eIYLV1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 interface_sv_unit
+S1
+Z4 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports
+w1786465481
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/interface.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/interface.sv
+L0 1
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1786465880.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/interface.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/interface.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+varb_with_ifc
+R1
+R2
+!i10b 1
+!s100 DzA7CT_?QSF7hTg^88NFH2
+I8LCkSdSE6WaRhJ>T:8@6:2
+R3
+!s105 arb_with_ifc_sv_unit
+S1
+R4
+w1786465747
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/arb_with_ifc.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/arb_with_ifc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/arb_with_ifc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/arb_with_ifc.sv|
+!i113 0
+R7
+R0
+vtest_with_ifc
+R1
+R2
+!i10b 1
+!s100 z9>Yj1LTSbdFY[6AmnOaW2
+IZDI9f0TB5_BiG<AO:ZIzG2
+R3
+!s105 test_with_ifc_sv_unit
+S1
+R4
+w1786465775
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/test_with_ifc.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/test_with_ifc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/test_with_ifc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/test_with_ifc.sv|
+!i113 0
+R7
+R0
+vtop3
+R1
+!s110 1786465881
+!i10b 1
+!s100 MVaBTT]4CLC;b^j9_?QUO3
+IZRQAIn8^0CG1YXloQm19@1
+R3
+!s105 top3_sv_unit
+S1
+R4
+w1786465808
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/top3.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/top3.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/top3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports/top3.sv|
+!i113 0
+R7
+R0

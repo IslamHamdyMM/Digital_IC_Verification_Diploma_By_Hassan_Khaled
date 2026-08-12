@@ -1,0 +1,311 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: Coverage_Class.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            2         2         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file Coverage_Class.sv --
+
+    1                                                class coverage_class;
+    2                                                
+    3                                                    rand logic [3:0]  opcode;   // 4-bit opcode input
+    4                                                    rand logic [7:0]  data;     // 8-bit data input
+    5                                                    bit clk;
+    6                                                
+    7                                                
+    8                                                    // Holds opcode post-randomize for transition constraint 
+    9                                                    bit [3:0] opcode_post_rand;
+    10                                               
+    11                                                   function void post_randomize();
+    12              1                        200         opcode_post_rand = opcode;
+    13                                                   endfunction 
+    14                                               
+    15                                                   // Steers opcode to be STORE whenever previous opcode was LOAD
+    16                                                   constraint load_store_seq_c {
+    17                                                   (opcode_post_rand == 4'd1) -> (opcode == 4'd2);
+    18                                                   }
+    19                                               
+    20                                                   covergroup cg;
+    21                                               
+    22                                                       option.per_instance = 1;
+    23                                               
+    24                                                       cp_opcode: coverpoint opcode {
+    25                                                           option.auto_bin_max = 5;
+    26                                                       }
+    27                                                       cp_opcode_bins: coverpoint opcode {
+    28                                                           bins ALU_operations       = {'d4,'d5,'d6};
+    29                                                           bins Load_Store           = {'d1,'d2};
+    30                                                           bins Miscellaneous        = {'d0,'d3,'d7,'d8};
+    31                                                           ignore_bins reserved_op   = {'d9,'d10,'d11,'d12};
+    32                                                           illegal_bins flage_op_ill = {'d15};
+    33                                                       }
+    34                                                       cp_data_range: coverpoint data {
+    35                                                           bins Low           = {[0:63]};
+    36                                                           bins mid           = {[64:127]};
+    37                                                           bins high          = {[128:255]};
+    38                                                       }
+    39                                                       cp_transitions: coverpoint opcode {
+    40                                                           bins Load_2_Store   = (1 => 2);
+    41                                                           bins Store_thr_ALU  = (2 => 4 => 5);
+    42                                                           option.weight = 0;
+    43                                                       }
+    44                                                       cp_data_when_alu: coverpoint data iff(opcode inside {4,5,6}) {
+    45                                                           bins Low           = {[0:63]};
+    46                                                           bins mid           = {[64:127]};
+    47                                                           bins high          = {[128:255]};
+    48                                                       }
+    49                                                       cp_data_when_load_store: coverpoint data iff(opcode inside {1,2}) {
+    50                                                           bins Low           = {[0:63]};
+    51                                                           bins mid           = {[64:127]};
+    52                                                           bins high          = {[128:255]};
+    53                                                       }
+    54                                                       opcode_data_cross: cross cp_data_range,cp_opcode_bins {
+    55                                                           option.cross_auto_bin_max  = 0;
+    56                                                           bins alu_ops_low_range     = binsof(cp_opcode_bins.ALU_operations) && binsof(cp_data_range.Low);
+    57                                                           bins alu_ops_not_low_range = binsof(cp_opcode_bins.ALU_operations) && !binsof(cp_data_range.Low);
+    58                                                       }
+    59                                                   endgroup : cg
+    60                                               
+    61                                                   function new();
+    62              1                          1             cg = new();
+    63                                                   endfunction
+    64                                               
+    65                                               endclass : coverage_class
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                         0         0         0     100.0
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                      0         0         0     100.0
+
+================================Toggle Details================================
+
+Toggle Coverage for File Coverage_Class.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+
+Total Node Count     =          0 
+Toggled Node Count   =          0 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =      100.0% (0 of 0 bins)
+
+=================================================================================
+=== File: Top.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           17        17         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file Top.sv --
+
+    1                                                `include "Coverage_Class.sv"
+    2                                                module top;
+    3                                                
+    4                                                    bit        clk;
+    5                                                    logic      rst_n;
+    6                                                    logic [3:0] opcode;
+    7                                                    logic [7:0] data;
+    8                                                    logic [7:0] result;
+    9                                                
+    10                                                   coverage_class Cov_Obj;
+    11                                               
+    12                                                   opcode_processor dut(.*);
+    13                                               
+    14                                                   initial begin
+    15              1                          1             clk = 0;
+    16              1                          1             forever #2ns clk = ~clk;
+    16              2                        405     
+    16              3                        404     
+    17                                                   end
+    18                                               
+    19                                                   initial begin
+    20              1                          1             Cov_Obj = new();
+    21                                               
+    22              1                          1             rst_n = 0;
+    23              1                          1             @(negedge clk);
+    24              1                          1             @(negedge clk);
+    25              1                          1             rst_n = 1;
+    26                                               
+    27              1                          1             for(int i = 0; i < 200; i++) begin
+    27              2                        200     
+    28              1                        200                 @(negedge clk);
+    29                                                           assert(Cov_Obj.randomize()) else $finish();
+    30                                               
+    31              1                        200                 opcode = Cov_Obj.opcode;
+    32              1                        200                 data   = Cov_Obj.data;
+    33                                               
+    34              1                        200                 Cov_Obj.cg.sample();
+    35                                               
+    36              1                        200                 $display("opcode = 4'b%0b, data = 8'h%0h", opcode, data);
+    37                                                       end
+    38              1                          1             $stop;
+    39                                                   end
+    40                                               
+    41                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                         0         0         0     100.0
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                     44        43         1      97.7
+
+================================Toggle Details================================
+
+Toggle Coverage for File Top.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+          5                                  rst_n           0           1       50.00 
+
+Total Node Count     =         22 
+Toggled Node Count   =         21 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =       97.7% (43 of 44 bins)
+
+=================================================================================
+=== File: opcode_processor.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           14        14         0     100.0
+
+================================Statement Details================================
+
+Statement Coverage for file opcode_processor.sv --
+
+    1                                                module opcode_processor (
+    2                                                    input  logic        clk,
+    3                                                    input  logic        rst_n,
+    4                                                    input  logic [3:0]  opcode,   // 4-bit opcode input
+    5                                                    input  logic [7:0]  data,     // 8-bit data input
+    6                                                    output logic [7:0]  result    // 8-bit output
+    7                                                );
+    8                                                
+    9                                                    // Internal register
+    10                                                   logic [7:0] regfile;
+    11                                               
+    12              1                        202         always_ff @(posedge clk or negedge rst_n) begin
+    13                                                       if (!rst_n) begin
+    14              1                          2                 regfile <= 8'b0;
+    15              1                          2                 result  <= 8'b0;
+    16                                                       end else begin
+    17                                                           case (opcode)
+    18              1                         15                     4'b0000: result <= data;                  // Pass-through
+    19              1                         10                     4'b0001: regfile <= data;                 // Load
+    20              1                         20                     4'b0010: result  <= regfile;              // Store
+    21              1                         16                     4'b0011: result  <= ~data;                // Bitwise NOT
+    22              1                          9                     4'b0100: result  <= data + regfile;       // ADD
+    23              1                         18                     4'b0101: result  <= data - regfile;       // SUB
+    24              1                          8                     4'b0110: result  <= data & regfile;       // AND
+    25              1                         13                     4'b0111: result  <= data | regfile;       // OR
+    26              1                         10                     4'b1000: result  <= data ^ regfile;       // XOR
+    27              1                         16                     4'b1111: result  <= 8'hFF;                // Error (for illegal bin coverage)
+    28              1                         65                     default: result <= 8'h00;                 // Default fallback
+    29                                                           endcase
+    30                                                       end
+    31                                                   end
+    32                                               
+    33                                               endmodule
+
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        13        13         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file opcode_processor.sv --
+
+------------------------------------IF Branch------------------------------------
+    13                                       202     Count coming in to IF
+    13              1                          2             if (!rst_n) begin
+    16              1                        200             end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    17                                       200     Count coming in to CASE
+    18              1                         15                     4'b0000: result <= data;                  // Pass-through
+    19              1                         10                     4'b0001: regfile <= data;                 // Load
+    20              1                         20                     4'b0010: result  <= regfile;              // Store
+    21              1                         16                     4'b0011: result  <= ~data;                // Bitwise NOT
+    22              1                          9                     4'b0100: result  <= data + regfile;       // ADD
+    23              1                         18                     4'b0101: result  <= data - regfile;       // SUB
+    24              1                          8                     4'b0110: result  <= data & regfile;       // AND
+    25              1                         13                     4'b0111: result  <= data | regfile;       // OR
+    26              1                         10                     4'b1000: result  <= data ^ regfile;       // XOR
+    27              1                         16                     4'b1111: result  <= 8'hFF;                // Error (for illegal bin coverage)
+    28              1                         65                     default: result <= 8'h00;                 // Default fallback
+Branch totals: 11 hits of 11 branches = 100.0%
+
+
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              0         0         0     100.0
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                     60        59         1      98.3
+
+================================Toggle Details================================
+
+Toggle Coverage for File opcode_processor.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+          3                                  rst_n           0           1       50.00 
+
+Total Node Count     =         30 
+Toggled Node Count   =         29 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =       98.3% (59 of 60 bins)
+
+
+Total Coverage By File (code coverage only, filtered view): 99.3%
+

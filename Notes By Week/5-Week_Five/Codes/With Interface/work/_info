@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/Without Interface
+T_opt
+!s110 1786465272
+VjP1[=R2iF9nKSBYHi?d=o2
+04 4 4 work top2 fast 0
+=1-f43909758d86-6a7b4bf8-e0-600
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+Yarb_if
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1786465265
+!i10b 1
+!s100 eM=MDGH;DLkPoTm`A>l`@0
+I4>TbGR:S0jm;nIbjnb]T60
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 interface_sv_unit
+S1
+Z4 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface
+w1786464640
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/interface.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/interface.sv
+L0 1
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1786465265.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/interface.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/interface.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+varb_with_ifc
+R1
+R2
+!i10b 1
+!s100 hcdOd2V4YYDHenWVdg8mF1
+I;d`g<M:55kBZ[X?GaaJH^3
+R3
+Z8 !s105 arb_with_ifc_sv_unit
+S1
+R4
+w1786465220
+Z9 8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/arb_with_ifc.sv
+Z10 FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/arb_with_ifc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z11 !s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/arb_with_ifc.sv|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/arb_with_ifc.sv|
+!i113 0
+R7
+R0
+varb_with_port
+R1
+!s110 1786465098
+!i10b 1
+!s100 =80=aOhYzV=If<m0QZ9RE1
+IPG=a3OnKglBiTJ@I_5W>B1
+R3
+R8
+S1
+R4
+w1786464818
+R9
+R10
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1786465097.000000
+R11
+R12
+!i113 0
+R7
+R0
+vtest_with_ifc
+R1
+R2
+!i10b 1
+!s100 >Cid1ER@S2946fFR4WLEg3
+IdlL_BILGWnz4?jSo9>g]I0
+R3
+Z13 !s105 test_with_ifc_sv_unit
+S1
+R4
+w1786465260
+Z14 8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/test_with_ifc.sv
+Z15 FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/test_with_ifc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z16 !s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/test_with_ifc.sv|
+Z17 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/test_with_ifc.sv|
+!i113 0
+R7
+R0
+vtest_with_port
+R1
+!s110 1786465231
+!i10b 1
+!s100 fz2I5GY^KJXhJGYKc21ZN2
+I[Z>0Mb8H5TjFeGmI[c1370
+R3
+R13
+S1
+R4
+w1786464903
+R14
+R15
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1786465231.000000
+R16
+R17
+!i113 0
+R7
+R0
+vtop2
+R1
+R2
+!i10b 1
+!s100 O`>ICAS[S];a8oN1`7<YX0
+IhXQGZ@bWZGAY5^IzeHm9b3
+R3
+!s105 top2_sv_unit
+S1
+R4
+w1786465021
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/top2.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/top2.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/top2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Interface/top2.sv|
+!i113 0
+R7
+R0

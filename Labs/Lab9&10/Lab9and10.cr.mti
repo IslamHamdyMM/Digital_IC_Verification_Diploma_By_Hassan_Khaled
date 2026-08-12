@@ -1,0 +1,15 @@
+E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/opcode_processor.sv {1 {vlog -work work -vopt -sv -stats=none E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/opcode_processor.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module opcode_processor
+
+Top level modules:
+	opcode_processor
+
+} {} {}} E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv {2 {vlog -work work -vopt -sv -stats=none E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Warning: E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv(55): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+
+Top level modules:
+	--none--
+
+} {} {}}

@@ -1,0 +1,98 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /Top_sv_unit/coverage_class/cg                   100.0%        100    Covered              
+    covered/total bins:                                    19         21                      
+    missing/total bins:                                     2         21                      
+    % Hit:                                              90.4%        100                      
+    Coverpoint cg::cp_opcode                           100.0%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp_opcode_bins                      100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp_data_range                       100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp_transitions                        0.0%        100    ZERO                 
+        covered/total bins:                                 0          0                      
+        missing/total bins:                                 0          0                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp_data_when_alu                    100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Coverpoint cg::cp_data_when_load_store             100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+    Cross cg::opcode_data_cross                        100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+ CLASS coverage_class
+ Covergroup instance \/Top_sv_unit::coverage_class::cg  
+                                                       100.0%        100    Covered              
+    covered/total bins:                                    19         21                      
+    missing/total bins:                                     2         21                      
+    % Hit:                                              90.4%        100                      
+    Coverpoint cp_opcode                               100.0%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0:2]                                      45          1    Covered              
+        bin auto[3:5]                                      44          1    Covered              
+        bin auto[6:8]                                      31          1    Covered              
+        bin auto[9:11]                                     28          1    Covered              
+        bin auto[12:15]                                    52          1    Covered              
+    Coverpoint cp_opcode_bins                          100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        illegal_bin flage_op_ill                           16               Occurred             
+        ignore_bin reserved_op                             38               Occurred             
+        bin ALU_operations                                 35          1    Covered              
+        bin Load_Store                                     30          1    Covered              
+        bin Miscellaneous                                  55          1    Covered              
+    Coverpoint cp_data_range                           100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                            57          1    Covered              
+        bin mid                                            45          1    Covered              
+        bin high                                           98          1    Covered              
+    Coverpoint cp_transitions [1]                        0.0%        100    ZERO                 
+        covered/total bins:                                 0          2                      
+        missing/total bins:                                 2          2                      
+        % Hit:                                           0.0%        100                      
+        bin Load_2_Store                                    0          1    ZERO                 
+        bin Store_thr_ALU                                   0          1    ZERO                 
+    Coverpoint cp_data_when_alu                        100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                            12          1    Covered              
+        bin mid                                             7          1    Covered              
+        bin high                                           16          1    Covered              
+    Coverpoint cp_data_when_load_store                 100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin Low                                             9          1    Covered              
+        bin mid                                             6          1    Covered              
+        bin high                                           15          1    Covered              
+    Cross opcode_data_cross                            100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin alu_ops_low_range                              12          1    Covered              
+        bin alu_ops_not_low_range                          23          1    Covered              
+
+ [1] - Does not contribute coverage as weight is 0
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1

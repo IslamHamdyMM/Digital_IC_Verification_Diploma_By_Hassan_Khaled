@@ -1,0 +1,121 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.6c/examples
+T_opt
+!s110 1786388496
+VYEHaU1LL1ig>3UXEe16lU3
+04 3 4 work top fast 0
+=1-f43909758d86-6a7a2010-289-248c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+R0
+XCoverage_Class_sv_unit
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1786388347
+!i10b 1
+!s100 DVV05I3E25fn5<GVjBa<23
+Izl;;Fcn4;80ZckmW]EI[k1
+Vzl;;Fcn4;80ZckmW]EI[k1
+!i103 1
+S1
+Z3 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10
+w1786376088
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv
+L0 1
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1786388347.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab9&10/Coverage_Class.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@coverage_@class_sv_unit
+vopcode_processor
+R2
+!s110 1786388578
+!i10b 1
+!s100 22TQLl=82CGYIc6nEeUFQ0
+IAzZBM9b7STez:8J;[WXRi1
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 opcode_processor_sv_unit
+S1
+R3
+w1786345344
+8opcode_processor.sv
+Fopcode_processor.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z6 !s108 1786388578.000000
+!s107 Coverage_Class.sv|Top.sv|opcode_processor.sv|
+Z7 !s90 -reportprogress|300|-cover|sbcft|opcode_processor.sv|Top.sv|
+!i113 0
+Z8 !s102 -cover sbcft
+Z9 o-cover sbcft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtop
+R2
+DXx4 work 11 Top_sv_unit 0 22 BRj=R;MEBhbO[g1lk@k]T3
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 8;UZQ7<9D6;2BD]Bi`A[13
+IHR5^2ldCI]_86Ki4=>AQ20
+!s105 Top_sv_unit
+S1
+R3
+Z10 w1786388405
+Z11 8Top.sv
+Z12 FTop.sv
+L0 2
+R4
+R6
+Z13 !s107 Coverage_Class.sv|Top.sv|opcode_processor.sv|
+R7
+!i113 0
+R8
+R9
+R1
+XTop_sv_unit
+R2
+VBRj=R;MEBhbO[g1lk@k]T3
+r1
+!s85 0
+31
+!i10b 1
+!s100 4GSj8ASfl6Tleb?eAii@]1
+IBRj=R;MEBhbO[g1lk@k]T3
+!i103 1
+S1
+R3
+R10
+R11
+R12
+FCoverage_Class.sv
+L0 1
+R4
+R6
+R13
+R7
+!i113 0
+R8
+R9
+R1
+n@top_sv_unit

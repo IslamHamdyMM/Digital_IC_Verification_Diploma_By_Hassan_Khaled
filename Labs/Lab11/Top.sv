@@ -8,7 +8,9 @@ module Top#(
 
     always #50 clk = ~clk;
 
-    
-
+    arb_if        #(N) arbif(clk);
+    arbiter       #(N) a1(arbif.DUT);
+    test_with_ifc #(N) t1(arbif.TB);
+    monitor       #(N) m1(arbif.MONITOR);
 
 endmodule 

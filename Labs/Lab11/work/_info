@@ -1,0 +1,140 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/5-Week_Five/Codes/With Modports
+T_opt
+!s110 1786476312
+V`zc<A2O2KAN4=HYPgD;[[1
+04 3 4 work Top fast 0
+=1-f43909758d86-6a7b7718-30e-4740
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+Yarb_if
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1786476303
+!i10b 1
+!s100 D0R>e[[]J;TQoKhM=iMhg3
+IFg>Uj:?Dlmza99^jEY[<a2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Interface_sv_unit
+S1
+Z4 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11
+w1786475504
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv
+L0 1
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1786476303.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+varbiter
+R1
+R2
+!i10b 1
+!s100 MG9Ho[YT@P46ZGYJRJT_71
+IS0?LiRf^<XC^P42?lUZ6d1
+R3
+!s105 design_to_bring_sv_unit
+S1
+R4
+w1786474036
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv|
+!i113 0
+R7
+R0
+vmonitor
+R1
+Z8 !s110 1786476304
+!i10b 1
+!s100 H5UMScSCXJVT2OMQjn`gT3
+I0mm6nXMV6[gmP`P9FY3Y]0
+R3
+!s105 monitor_sv_unit
+S1
+R4
+w1786476096
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/monitor.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/monitor.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z9 !s108 1786476304.000000
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/monitor.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/monitor.sv|
+!i113 0
+R7
+R0
+vtest_with_ifc
+R1
+R8
+!i10b 1
+!s100 l6EfU[4ng:>1XbFG<XV`E2
+I;IXcHb7APfa8aKbnY0I0G0
+R3
+!s105 test_with_ifc_sv_unit
+S1
+R4
+w1786475073
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/test_with_ifc.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/test_with_ifc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/test_with_ifc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/test_with_ifc.sv|
+!i113 0
+R7
+R0
+vTop
+R1
+R8
+!i10b 1
+!s100 `CX0i]QkD@de>;`G1Y:N_0
+IW[M84D4D4PRAO]Kh;hPnd0
+R3
+!s105 Top_sv_unit
+S1
+R4
+w1786475841
+8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Top.sv
+FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Top.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R9
+!s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Top.sv|
+!i113 0
+R7
+R0
+n@top
