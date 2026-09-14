@@ -1,0 +1,26 @@
+{E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Code2/Rectangle_Class.sv} {1 {vlog -work work -vopt -sv -stats=none {E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\Rectangle_Class.sv}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package class_Rectangle
+
+Top level modules:
+	--none--
+
+} {} {}} {E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Code2/shape_test.sv} {2 {vlog -work work -vopt -sv -stats=none {E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\shape_test.sv}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Warning: E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\shape_test.sv(6): (vlog-2244) Variable 'square' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\shape_test.sv(7): (vlog-2244) Variable 'rectangle' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+-- Compiling package shape_test_sv_unit
+-- Importing package class_square
+-- Importing package class_Rectangle
+-- Compiling program shape_test
+** Warning: E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\shape_test.sv(6): (vlog-2244) Variable 'square' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+** Warning: E:\Digital_IC_Verification_Diploma_By_Hassan_Khaled\Sessions\Notes By Week\UVM\Code2\shape_test.sv(7): (vlog-2244) Variable 'rectangle' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+
+Top level modules:
+	shape_test
+
+} {} {}}

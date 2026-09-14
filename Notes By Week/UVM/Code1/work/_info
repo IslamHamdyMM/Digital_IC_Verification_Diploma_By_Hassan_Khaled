@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Course Projects/1-AXI4_Memory_SV_Project/AXI4/System_Testing_(Test_Axi_with_Memory)
+T_opt
+!s110 1788040782
+VbKTHKW>KZMfhLn`2]_1?a3
+04 16 4 work shape_calculator fast 0
+=1-f43909758d86-6a93564e-299-46b8
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+4shape_calculator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 18 Warming_Up_sv_unit 0 22 S?RzAHKN`SRimaSjT_4V;2
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 f5]m=AbYFLh;;iTE]gZjj2
+IVMgc23Raa]2nIez0gJ6@73
+!s105 Warming_Up_sv_unit
+S1
+Z2 dE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Codes
+Z3 w1788040680
+Z4 8E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Codes/Warming_Up.sv
+Z5 FE:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Codes/Warming_Up.sv
+L0 6
+Z6 OL;L;10.6c;65
+Z7 !s108 1788040759.000000
+Z8 !s107 E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Codes/Warming_Up.sv|
+Z9 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Notes By Week/UVM/Codes/Warming_Up.sv|
+!i113 0
+Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+XWarming_Up_sv_unit
+R1
+VS?RzAHKN`SRimaSjT_4V;2
+r1
+!s85 0
+31
+!i10b 1
+!s100 9<nNak3<KbgF82b@84Sj41
+IS?RzAHKN`SRimaSjT_4V;2
+!i103 1
+S1
+R2
+R3
+R4
+R5
+L0 1
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R0
+n@warming_@up_sv_unit

@@ -5,13 +5,6 @@ QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
 Top level modules:
 	test_with_ifc
 
-} {} {}} E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv {1 {vlog -work work -vopt -sv -stats=none E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/Interface.sv
-QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
--- Compiling interface arb_if
-
-Top level modules:
-	--none--
-
 } {} {}} E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv {1 {vlog -work work -vopt -sv -stats=none E:/Digital_IC_Verification_Diploma_By_Hassan_Khaled/Sessions/Labs/Lab11/design_to_bring.sv
 QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
 -- Compiling module arbiter

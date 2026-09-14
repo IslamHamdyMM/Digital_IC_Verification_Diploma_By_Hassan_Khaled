@@ -1,0 +1,12 @@
+./Not_Virtual/animal_class.sv
+./Not_Virtual/checken_class.sv
+./Not_Virtual/lion_class.sv
+./Not_Virtual/top.sv
+./Pure_Virtual/animal_class.sv
+./Pure_Virtual/checken_class.sv
+./Pure_Virtual/lion_class.sv
+./Pure_Virtual/top.sv
+./Virtual/animal_class.sv
+./Virtual/checken_class.sv
+./Virtual/lion_class.sv
+./Virtual/top.sv

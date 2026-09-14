@@ -33,4 +33,6 @@ interface arb_if#(
 
     modport MONITOR(clocking cb);
 
+    
+
 endinterface
